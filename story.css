@@ -1,0 +1,282 @@
+/*---------------------Roots-----------------*/
+
+:root {
+    --lightcream: #F4E6D2;
+    --black: #492000;
+    --lightbrown: #B6734A;
+    --paragraph: #A8957C;
+}
+
+/*---------------------Roots-----------------*/
+
+
+.story .heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.story .heading h1 {
+    text-align: left;
+    color: var(--black);
+    line-height: 95px;
+    font-size: 95px;
+}
+
+.story .heading p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--paragraph);
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.story .container {
+    position: relative;
+}
+
+.story .container #storyimage {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.story .container #circleimage {
+    position: absolute;
+    right: 29%;
+    top: -5%;
+    width: 15%;
+      transform: rotate(-90deg);
+      transition: transform 1s ease;       /* start rotation */
+}
+.story .container #circleimage.aos-animate {
+  transform: rotate(0deg);         /* final rotation after AOS zoom */
+}
+
+
+
+@media (max-width:1540px) {
+    .story .heading h1 {
+        line-height: 80px;
+        font-size: 80px;
+    }
+}
+
+@media (max-width:1366px) {
+    .story .heading h1 {
+        line-height: 70px;
+        font-size: 70px;
+    }
+}
+
+@media (max-width:1280px) {
+    .story .heading h1 {
+        line-height: 60px;
+        font-size: 60px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 35%;
+        top: -5%;
+        width: 15%;
+    }
+}
+
+
+@media (max-width:1080px) {
+    .story .heading h1 {
+        line-height: 50px;
+        font-size: 50px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 40%;
+        top: -5%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:950px) {
+    .story .heading h1 {
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 40%;
+        top: -5%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:850px) {
+    .story .heading h1 {
+        line-height: 35px;
+        font-size: 35px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 42%;
+        top: -5%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 11px;
+        line-height: 22px;
+    }
+}
+
+
+
+@media (max-width:850px) {
+    .story .heading {
+        display: block;
+    }
+
+    .story .heading h1 {
+        line-height: 70px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 42%;
+        top: -5%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:750px) {
+    .story .heading h1 {
+        line-height: 60px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .story .container{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:580px) {
+    .story .heading h1 {
+        line-height: 50px;
+        font-size: 40px;
+    }
+
+    .story .heading p {
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .story .container{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:450px) {
+
+    .story .heading h1 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        width: 15%;
+    }
+    .story .heading p {
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .story .container{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .story .heading h1 {
+        line-height: 30px;
+        font-size: 28px;
+    }
+
+    .story .heading p {
+        font-size: 11px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .story .container{
+        margin-top: 0px;
+    }
+        .story .container #circleimage {
+        right: 10%;
+        top: 10%;
+        width: 20%;
+    }
+}
+
+@media (max-width:340px) {
+    .story .heading h1 {
+        line-height: 25px;
+        font-size: 25px;
+    }
+
+    .story .container #circleimage {
+        position: absolute;
+        right: 10%;
+        top: 15%;
+        width: 15%;
+    }
+
+    .story .heading p {
+        font-size: 10px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .story .container{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,212 @@
+/*---------------------Roots-----------------*/
+
+:root {
+    --lightcream: #F4E6D2;
+    --black: #492000;
+    --lightbrown: #B6734A;
+    --paragraph: #A8957C;
+}
+
+/*---------------------Roots-----------------*/
+
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter .container h1 {
+    font-size: 80px;
+    color: var(--black);
+}
+
+.newsletter .container p {
+    color: var(--paragraph);
+    font-size: 16px;
+    line-height: 35px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.newsletter .container .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 70px;
+    margin-top: 30px;
+}
+
+.newsletter .container .input input {
+    width: 100%;
+    height: 100%;
+    background-color: #EAD9C2;
+    border-radius: 12px;
+    color: var(--black);
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+.newsletter .container .input input::placeholder {
+    color: var(--black);
+}
+
+.newsletter .container .input button {
+    width: 300px;
+    height: 70px;
+    background-color: var(--lightbrown);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    padding-left: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    border-radius: 12px;
+    color: var(--lightcream);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.newsletter .container .input button i {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: var(--lightcream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transform: rotate(-40deg);
+    transition: transform 0.4s ease;
+    color: var(--lightbrown);
+}
+
+.newsletter .container .input button:hover {
+    box-shadow: 0px 10px 30px #49200069;
+    background: linear-gradient(90deg, #492000, #683005);
+}
+
+/* 👇 Jab pura button hover ho to icon move kare */
+.newsletter .container .input button:hover i {
+    transform: translateX(6px);
+    color: var(--black);
+}
+
+
+
+
+@media (max-width:920px) {
+
+    .newsletter .container h1 {
+        font-size: 70px;
+    }
+
+    .newsletter .container p {
+        font-size: 14px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .newsletter .container h1 {
+        font-size: 60px;
+    }
+
+    .newsletter .container p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .newsletter .container .input {
+        display: block;
+        width: 100%;
+    }
+
+    .newsletter .container .input button {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width:700px) {
+
+    .newsletter .container h1 {
+        font-size: 55px;
+    }
+
+    .newsletter .container p {
+        font-size: 11px;
+        line-height: 25px;
+        width: 450px;
+        margin: 0px auto;
+    }
+
+    .newsletter .container .input {
+        display: block;
+        width: 100%;
+    }
+
+    .newsletter .container .input button {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .newsletter .container h1 {
+        font-size: 50px;
+    }
+
+    .newsletter .container p {
+        font-size: 10px;
+        line-height: 25px;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .newsletter .container .input {
+        display: block;
+        width: 100%;
+    }
+
+    .newsletter .container .input button {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .newsletter .container h1 {
+        font-size: 35px;
+    }
+
+    .newsletter .container p {
+        font-size: 10px;
+        line-height: 25px;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .newsletter .container .input {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .newsletter .container .input button {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}

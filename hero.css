@@ -1,0 +1,480 @@
+/*---------------------Roots-----------------*/
+
+:root {
+  --lightcream: #F4E6D2;
+  --black: #492000;
+  --lightbrown: #B6734A;
+  --paragraph: #A8957C;
+}
+
+/*---------------------Roots-----------------*/
+.scroll-section {
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero .cupimage {
+  width: 100%;
+  height: 1000px;
+  /* desktop height */
+  position: relative;
+}
+
+.hero .cupimage img {
+  position: absolute;
+  width: 40%;
+  transition: all 0.3s ease;
+    opacity: 0;
+  transform: translateX(200px);
+}
+
+.hero .cupimage img:active {
+  transform: scale(1.1) rotate(3deg);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ---------- Desktop (Default) ---------- */
+.hero .cupimage #c1 {
+  top: -20%;
+  left: -10%;
+  z-index: 2;
+  animation-delay: 0s;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+    opacity: 0;
+  transform: translateX(120px);
+
+}
+
+.hero .cupimage #c2 {
+  top: 10%;
+  left: 15%;
+  z-index: 3;
+  animation-delay: 0.5s;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.hero .cupimage #c3 {
+  top: 5%;
+  left: 50%;
+  z-index: 3;
+  transform-origin: center bottom;
+  animation-delay: 0.4s;
+  transform: scale(0.8);
+}
+
+.hero .cupimage #c4 {
+  right: -25%;
+  bottom: -10%;
+  z-index: 2;
+  animation-delay: 1.5s;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.hero .text {
+  background-color: transparent;
+  margin-top: -200px;
+}
+
+.hero .text h1 {
+  color: var(--black);
+  font-size: 100px;
+  line-height: 100px;
+  margin: 15px 0px;
+}
+
+
+.hero .text button {
+  width: 200px;
+  height: 70px;
+  background: linear-gradient(90deg, #492000, #683005);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  padding-left: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 12px;
+  color: var(--lightcream);
+  cursor: pointer;
+}
+
+.hero .text button i {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: var(--lightcream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  transform: rotate(-40deg);
+  transition: transform 0.4s ease;
+  color: var(--black);
+}
+
+.hero .text button:hover {
+  box-shadow: 0px 10px 30px #49200052;
+}
+
+/* 👇 Jab pura button hover ho to icon move kare */
+.hero .text button:hover i {
+  transform: translateX(6px);
+}
+
+
+
+
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.hero .container .counter-box {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.hero .container .counter-box h5 {
+  font-size: 12px;
+  color: var(--paragraph);
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 10px;
+}
+
+.hero .container .counter-box .counter {
+  font-size: 60px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.hero .container .line {
+  background-color: var(--paragraph);
+  width: 2px;
+  height: 90px;
+}
+
+
+/* ---------- Large Tablets (max-width: 1200px) ---------- */
+@media (max-width: 1480px) {
+  .hero .cupimage {
+    height: 900px;
+  }
+
+  .hero .cupimage img {
+    width: 35%;
+  }
+
+  .hero .cupimage #c1 {
+    top: -30%;
+    left: -5%;
+  }
+
+  .hero .cupimage #c4 {
+    right: -25%;
+  }
+
+  .hero .container {
+    right: 4%;
+    top: 5%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero .cupimage #c1 {
+    top: -10%;
+    left: -5%;
+  }
+
+  .hero .cupimage #c4 {
+    right: -25%;
+  }
+
+  .hero .cupimage #c2 {
+    top: 15%;
+    left: 20%;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero .cupimage #c1 {
+    top: -10%;
+    left: -5%;
+  }
+
+  .hero .cupimage #c3 {
+    top: 30%;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .hero .cupimage #c4 {
+    right: -15%;
+  }
+
+  .hero .cupimage #c2 {
+    top: 15%;
+    left: 20%;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero .cupimage img {
+    position: absolute;
+    width: 30%;
+    transition: all 0.3s ease;
+  }
+
+  .hero .cupimage #c1 {
+    top: 0%;
+    left: -5%;
+  }
+
+  .hero .cupimage #c3 {
+    top: 25%;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .hero .cupimage #c4 {
+    right: -10%;
+    bottom: 25%;
+  }
+
+  .hero .cupimage #c2 {
+    top: 15%;
+    left: 20%;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero .container {
+    right: 5%;
+    top: 50%;
+  }
+}
+
+
+/* ---------- Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+  .hero .cupimage {
+    height: 600px;
+  }
+
+  .hero .cupimage img {
+    width: 30%;
+  }
+
+  .hero .cupimage #c1 {
+    top: -20%;
+    left: 0%;
+  }
+
+  .hero .cupimage #c2 {
+    left: 25%;
+  }
+
+  .hero .cupimage #c3 {
+    left: 50%;
+  }
+
+  .hero .cupimage #c4 {
+    right: -15%;
+  }
+}
+
+
+/* ---------- Tablets (max-width: 992px) ---------- */
+@media (max-width: 800px) {
+  .hero .cupimage #c1 {
+    top: -10%;
+    left: 0%;
+  }
+
+  .hero .cupimage #c2 {
+    left: 22%;
+  }
+
+  .hero .cupimage #c3 {
+    left: 52%;
+  }
+
+  .hero .cupimage #c4 {
+    right: -15%;
+  }
+}
+
+/* ---------- Mobile (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+
+  .hero .cupimage {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+
+  .hero .cupimage img {
+    position: static;
+    width: 45%;
+    margin: 10px;
+  }
+
+
+  .hero .text {
+    margin-top: -50px;
+  }
+
+  .hero .text h1 {
+    color: var(--black);
+    font-size: 70px;
+    line-height: 70px;
+    margin: 15px 0px;
+  }
+
+  .hero .text button {
+    width: 180px;
+    height: 60px;
+    padding: 0px 10px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+
+  .hero .container {
+    right: 5%;
+    top: 69%;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .hero .container {
+    right: 5%;
+    top: 70%;
+  }
+
+  .hero .container .counter-box h5 {
+    font-size: 10px;
+  }
+
+  .hero .container .line {
+    height: 50px;
+  }
+
+  .hero .container .counter-box {
+    margin: 0px 8px;
+  }
+
+  .hero .container .counter-box .counter {
+    font-size: 30px;
+    height: 20px;
+  }
+
+}
+
+
+
+@media (max-width: 450px) {
+  .hero .cupimage {
+    padding: 0px 0;
+    height: 300px;
+  }
+
+  .hero .cupimage img {
+    position: absolute;
+    width: 35%;
+    margin: 0px;
+  }
+
+  .hero .text {
+    margin-top: -70px;
+  }
+
+  .hero .text h1 {
+    color: var(--black);
+    font-size: 50px;
+    line-height: 50px;
+    margin: 10px 0px;
+  }
+
+  .hero .text button {
+    width: 130px;
+    height: 50px;
+    padding: 0px 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+
+  .hero .text button i {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero .text img {
+    width: 70px;
+  }
+
+  .hero .text button:hover {
+    box-shadow: 0px 5px 15px #49200052;
+  }
+
+  .hero .container {
+    right: 5%;
+    top: 52%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .hero .text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 10px 0px;
+  }
+
+  .hero .text img {
+    width: 50px;
+  }
+}

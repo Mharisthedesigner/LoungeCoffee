@@ -1,0 +1,227 @@
+/*---------------------Roots-----------------*/
+
+:root {
+    --lightcream: #F4E6D2;
+    --black: #492000;
+    --lightbrown: #B6734A;
+    --paragraph: #A8957C;
+}
+
+/*---------------------Roots-----------------*/
+
+.about {
+    background-color: transparent;
+}
+
+.about .conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about .conatiner .topheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .conatiner .topheading h1 {
+    color: var(--lightbrown);
+    font-size: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .conatiner .centerheading {
+    margin-top: -40px;
+}
+
+.about .conatiner .centerheading h1 {
+    color: var(--lightbrown);
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .conatiner #bottomheading {
+    margin-top: -40px;
+}
+
+
+
+@media (max-width:1600px) {
+    .about .conatiner .topheading h1 {
+        font-size: 120px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 130px;
+    }
+}
+
+@media (max-width:1366px) {
+    .about .conatiner .topheading h1 {
+        font-size: 100px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 110px;
+    }
+}
+
+@media (max-width:1220px) {
+    .about .conatiner .topheading h1 {
+        font-size: 80px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -30px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -30px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width:900px) {
+    .about .conatiner .topheading h1 {
+        font-size: 70px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -30px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -30px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:800px) {
+    .about .conatiner .topheading h1 {
+        font-size: 60px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -20px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -20px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width:700px) {
+    .about .conatiner .topheading h1 {
+        font-size: 50px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -20px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -20px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:600px) {
+    .about .conatiner .topheading h1 {
+        font-size: 40px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:530px) {
+    .about .conatiner .topheading h1 {
+        font-size: 30px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:420px) {
+    .about .conatiner .topheading h1 {
+        font-size: 30px;
+    }
+
+    .about .conatiner .topheading img {
+        width: 40%;
+    }
+
+    .about .conatiner .centerheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner #bottomheading {
+        margin-top: -10px;
+    }
+
+    .about .conatiner .centerheading h1 {
+        font-size: 30px;
+    }
+}

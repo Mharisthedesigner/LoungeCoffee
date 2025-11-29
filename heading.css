@@ -1,0 +1,40 @@
+/*---------------------Roots-----------------*/
+
+:root {
+    ---green: #BEF209;
+    ---white: #ffffff;
+    ---black: #000000;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+
+
+
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: var(---white);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+}
+
+
+
+
+@media (max-width:500px) {
+
+    .heading h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .heading h1 {
+        font-size: 35px;
+    }
+}
